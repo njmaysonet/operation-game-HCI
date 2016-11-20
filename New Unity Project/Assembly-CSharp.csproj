@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GameCore.cs" />
      <Compile Include="Assets\Scripts\PlayerQuantitySelect.cs" />
      <Compile Include="Assets\Scripts\PlayerStruct.cs" />
+     <Compile Include="Assets\Scripts\ShuffleDecks.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
