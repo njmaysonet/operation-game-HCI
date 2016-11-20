@@ -30,6 +30,6 @@ public class CardStruct : MonoBehaviour {
 
 	public void SetVisible(bool value)
 	{
-		this.setVisible = value;
+		this.SetVisible = value;
 	}
 }
