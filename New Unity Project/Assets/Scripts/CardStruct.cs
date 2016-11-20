@@ -7,7 +7,6 @@ public class CardStruct : MonoBehaviour {
     SpriteRenderer spriteRenderer;
     public Sprite[] DocterFace;//Array of Sprites to contain the Docter Deck
     public Sprite[] SpecialistFace;//Array of Sprites to contian Specialist Deck to keep track of the individial cards
-    public Sprite cardBack;
     public Sprite[] CardFaces;//An array to keep track of the positions of every card. First 12 will be docter, next 12 will be used for Specialist
     //We don't have to use this method but I think it would work well
     //It would be for shuffling cards with the cardfaces array and then obtaining the index of its location and using that index for the next array of Docter/Specialist
@@ -48,15 +47,4 @@ public class CardStruct : MonoBehaviour {
 	//	this.SetVisible = value;
 	}
 
-    public void toggleFace(bool showFace)
-    {
-        if (showFace)
-        {
-            spriteRenderer.sprite = CardFaces[index];
-        }
-        else
-        {
-            spriteRenderer.sprite = cardBack;
-        }
-    }
 }
