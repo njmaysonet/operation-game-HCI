@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Maze Scenes/Writers_Cramp.unity
+- path: Assets/_Scenes/Maze Scenes/Adams_Apple.unity
   isLoaded: 1
   isActive: 1
