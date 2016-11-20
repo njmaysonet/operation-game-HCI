@@ -70,7 +70,7 @@ public class DraggingObj : MonoBehaviour {
 			//Updates the new center
 			newObjCenter = touchPos - offset;
 
-			//Updates the object's cneter
+			//Updates the object's center
 			objToDrag.transform.position = new Vector3(newObjCenter.x, newObjCenter.y, newObjCenter.z);
 		}
 
