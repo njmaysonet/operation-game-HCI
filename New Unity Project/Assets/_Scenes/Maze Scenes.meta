@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8954312281798b14799b9e144c55bbaf
 folderAsset: yes
 timeCreated: 1479623197
+=======
+guid: 64dedf8d5d60fa6479861916424d6fa9
+folderAsset: yes
+timeCreated: 1479665783
+>>>>>>> BigMerge
 licenseType: Free
 DefaultImporter:
   userData: 

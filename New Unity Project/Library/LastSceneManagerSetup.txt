@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes/Maze Scenes/Adams_Apple.unity
+=======
+- path: Assets/_Scenes/Final Scenes/PlayerSelectMenu.unity
+>>>>>>> BigMerge
   isLoaded: 1
   isActive: 1
