@@ -2,6 +2,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerQuantitySelect : MonoBehaviour
 {	
@@ -30,8 +31,9 @@ public class PlayerQuantitySelect : MonoBehaviour
 	//send value to log and change playerCount to index of option + 1
 	private void DropdownValueChangedHandler(Dropdown target)
 	{
-		Debug.Log("selected: " + target.value);
+		Debug.Log("selected index: " + target.value);
 		playerCount = target.value + 1;
+		SceneManager.LoadScene ("PlayerNameMenu");
 	}
 		
 }

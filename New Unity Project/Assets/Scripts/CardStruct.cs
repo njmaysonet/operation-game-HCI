@@ -28,8 +28,8 @@ public class CardStruct : MonoBehaviour {
 		}
 	}
 
-	public void SetVisible(bool value)
+	/*public void SetVisible(bool value)
 	{
-		this.SetVisible = value;
-	}
+		this.SetVisible;
+	}*/
 }

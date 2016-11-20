@@ -19,7 +19,7 @@ public class GameCore : MonoBehaviour {
         playerCount = 1; //initially set to 1
 		playerList = new ArrayList();
 		shuffleList = new ArrayList ();
-		DontDestroyOnLoad(this.gameObject);
+		DontDestroyOnLoad(this);
 
 	}
 
@@ -40,7 +40,12 @@ public class GameCore : MonoBehaviour {
         gameTurn++;
     }
 
-	void MakeCards()
+	public void setPlayerCount(int count)
+	{
+		playerCount = count;
+	}
+
+	/*void MakeCards()
 	{
 		//Instantiating the cards
 		for (int i = 0; i < 12; i++) {
@@ -49,6 +54,6 @@ public class GameCore : MonoBehaviour {
 			tempCard.SetVisible (false);
 			shuffleList.Add (tempCard);
 		}
-	}
+	}*/
 
 }
