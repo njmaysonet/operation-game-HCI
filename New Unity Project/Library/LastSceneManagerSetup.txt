@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/startup.unity
+- path: Assets/_Scenes/timer.unity
   isLoaded: 1
   isActive: 1
