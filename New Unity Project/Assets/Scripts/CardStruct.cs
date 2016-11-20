@@ -41,15 +41,5 @@ public class CardStruct : MonoBehaviour {
 			return cardFees [cardID];
 		}
 	}
-
-	/*public void SetVisible(bool value)
-	{
-<<<<<<< HEAD
-		this.SetVisible;
-	}*/
-=======
-	//	this.SetVisible = value;
-	}
-
->>>>>>> e078db1f242c6e3dd73101beb8512bd4b0d74464
+		
 }

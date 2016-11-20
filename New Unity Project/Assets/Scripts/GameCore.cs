@@ -10,6 +10,8 @@ public class GameCore : MonoBehaviour {
 	public ArrayList playerList;
 	public ArrayList shuffleList;
 	private CardStruct tempCard;
+	private PlayerStruct tempPlayer;
+	public PlayerStruct originalPlayer;
 
     
 	// Use this for initialization
@@ -40,9 +42,18 @@ public class GameCore : MonoBehaviour {
         gameTurn++;
     }
 
-	public void setPlayerCount(int count)
+	public void SetPlayerCount(int count)
 	{
 		playerCount = count;
+	}
+	//must call AFTER SetPlayerCount
+	public void CreatePlayers()
+	{
+		for (int i = 0; i < playerCount; i++) {
+			tempPlayer = Instantiate (originalPlayer);
+			tempPlayer.playerID = i + 1;
+			playerList.Add (tempPlayer);
+		}
 	}
 
 	/*void MakeCards()

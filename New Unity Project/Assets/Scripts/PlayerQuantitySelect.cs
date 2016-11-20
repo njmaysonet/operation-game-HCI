@@ -8,6 +8,7 @@ public class PlayerQuantitySelect : MonoBehaviour
 {	
 	public int playerCount;
 	public Dropdown PlayerNumDropdown;
+	public GameObject gc;
 
 	// Use this for initialization
 	void Awake() {
@@ -33,6 +34,9 @@ public class PlayerQuantitySelect : MonoBehaviour
 	{
 		Debug.Log("selected index: " + target.value);
 		playerCount = target.value + 1;
+		//call functions from GameCore to set up players
+		gc.GetComponent<GameCore>().SetPlayerCount (target.value + 1);
+		gc.GetComponent<GameCore> ().CreatePlayers ();
 		SceneManager.LoadScene ("PlayerNameMenu");
 	}
 		

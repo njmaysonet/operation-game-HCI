@@ -47,13 +47,11 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CardStruct.cs" />
      <Compile Include="Assets\Scripts\GameCore.cs" />
+     <Compile Include="Assets\Scripts\PlayerNameScript.cs" />
      <Compile Include="Assets\Scripts\PlayerQuantitySelect.cs" />
      <Compile Include="Assets\Scripts\PlayerStruct.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\StartGame.cs" />
-=======
      <Compile Include="Assets\Scripts\ShuffleDecks.cs" />
->>>>>>> e078db1f242c6e3dd73101beb8512bd4b0d74464
+     <Compile Include="Assets\Scripts\StartGame.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

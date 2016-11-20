@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PlayerStruct : MonoBehaviour {
 
-	private int playerID;
-    private bool playerTurn;
-    private string playerName;
+	public int playerID;
+    public bool playerTurn;
+    public string playerName;
 	public ArrayList cardList;
 
 	void Awake()
@@ -14,7 +14,7 @@ public class PlayerStruct : MonoBehaviour {
 		playerTurn = false;
 		playerName = "";
 		cardList = new ArrayList ();
-		DontDestroyOnLoad (this.gameObject);
+		DontDestroyOnLoad (this);
 	}
 
     public void setPlayerName(string name)
