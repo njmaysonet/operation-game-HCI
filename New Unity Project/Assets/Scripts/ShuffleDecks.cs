@@ -21,6 +21,17 @@ public class ShuffleDecks : MonoBehaviour {
         {
             cards.Add(i);
         }
+
+        int n = cards.Count;
+
+        while(n>1)//A simple sorting algorithm to shuffle cards
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            int temp = cards[k];
+            cards[k] = cards[n];
+            cards[n] = temp;
+        }
     }
     void Start()
     {
