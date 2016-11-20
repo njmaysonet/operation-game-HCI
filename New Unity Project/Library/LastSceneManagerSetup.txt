@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/timer_part2.unity
+- path: Assets/_Scenes/how_many_players.unity
   isLoaded: 1
   isActive: 1
