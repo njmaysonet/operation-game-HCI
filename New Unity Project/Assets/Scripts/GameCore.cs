@@ -49,7 +49,7 @@ public class GameCore : MonoBehaviour {
 	{
 		//Instantiating the cards
 		for (int i = 0; i < 12; i++) {
-			tempCard = Instantiate (CardStruct);
+		//	tempCard = Instantiate (CardStruct);
 			tempCard.cardID = i;
 			tempCard.SetVisible (false);
 			shuffleList.Add (tempCard);
