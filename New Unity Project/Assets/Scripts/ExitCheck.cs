@@ -2,22 +2,24 @@
 using System.Collections;
 
 public class ExitCheck : MonoBehaviour {
+    
+    public AudioClip success;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Use this for initialization
+    void Start () {
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.name == "cursor")
-        {
-            Debug.Log("You win!");
-        }
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = success;
     }
+
+    void OnCollisionEnter()
+    {
+        GetComponent<AudioSource>().Play();
+        Debug.Log("You win!");
+    }
+
+    // Update is called once per frame
+    void Update () {
+	
+	}
 }

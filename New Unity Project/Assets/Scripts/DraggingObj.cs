@@ -71,7 +71,7 @@ public class DraggingObj : MonoBehaviour {
 			newObjCenter = touchPos - offset;
 
 			//Updates the object's center
-			objToDrag.transform.position = new Vector3(newObjCenter.x, newObjCenter.y, newObjCenter.z);
+			objToDrag.transform.position = new Vector3(newObjCenter.x, newObjCenter.y);
 		}
 
 		//If the user lets go of the left mouse button
