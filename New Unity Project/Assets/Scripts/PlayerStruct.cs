@@ -6,6 +6,7 @@ public class PlayerStruct : MonoBehaviour {
 	public int playerID;
     public bool playerTurn;
     public string playerName;
+	public int score;
 	public ArrayList cardList;
 
 	void Awake()
@@ -14,6 +15,7 @@ public class PlayerStruct : MonoBehaviour {
 		playerTurn = false;
 		playerName = "";
 		cardList = new ArrayList ();
+		score = 0;
 		DontDestroyOnLoad (this);
 	}
 

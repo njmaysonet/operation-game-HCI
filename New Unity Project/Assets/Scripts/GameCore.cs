@@ -55,7 +55,7 @@ public class GameCore : MonoBehaviour {
 			playerList.Add (tempPlayer);
 		}
 	}
-
+		
 	/*void MakeCards()
 	{
 		//Instantiating the cards
