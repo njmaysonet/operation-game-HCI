@@ -48,7 +48,6 @@
      <Compile Include="Assets\Scripts\DraggingObj.cs" />
      <Compile Include="Assets\Scripts\ExitCheck.cs" />
      <Compile Include="Assets\Scripts\MazeFailure.cs" />
-     <Compile Include="Assets\Scripts\newDrag.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
