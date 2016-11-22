@@ -45,17 +45,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BodyPartsScript.cs" />
-     <Compile Include="Assets\GameMenuScript.cs" />
-     <Compile Include="Assets\MenuBackgroundScript.cs" />
-     <Compile Include="Assets\PlayerAndScoreScript.cs" />
+     <Compile Include="Assets\CardSwitcher.cs" />
+     <Compile Include="Assets\Scripts\BodyPartsScript.cs" />
      <Compile Include="Assets\Scripts\CardStruct.cs" />
+     <Compile Include="Assets\Scripts\DraggingObj.cs" />
+     <Compile Include="Assets\Scripts\ExitCheck.cs" />
      <Compile Include="Assets\Scripts\GameCore.cs" />
+     <Compile Include="Assets\Scripts\GameMenuScript.cs" />
+     <Compile Include="Assets\Scripts\MazeFailure.cs" />
+     <Compile Include="Assets\Scripts\MenuBackgroundScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerAndScoreScript.cs" />
      <Compile Include="Assets\Scripts\PlayerNameScript.cs" />
      <Compile Include="Assets\Scripts\PlayerQuantitySelect.cs" />
      <Compile Include="Assets\Scripts\PlayerStruct.cs" />
      <Compile Include="Assets\Scripts\ShuffleDecks.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
+     <Compile Include="Assets\Scripts\newDrag.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

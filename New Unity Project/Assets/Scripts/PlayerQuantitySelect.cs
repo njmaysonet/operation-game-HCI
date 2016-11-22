@@ -30,7 +30,7 @@ public class PlayerQuantitySelect : MonoBehaviour
 	}
 
 	//send value to log and change playerCount to index of option + 1
-	private void DropdownValueChangedHandler(Dropdown target)
+	public void DropdownValueChangedHandler(Dropdown target)
 	{
 		Debug.Log("selected index: " + target.value);
 		playerCount = target.value + 1;

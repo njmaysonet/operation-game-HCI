@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Final Scenes/StartMenu.unity
+- path: Assets/_Scenes/Final Scenes/GameView.unity
   isLoaded: 1
   isActive: 1

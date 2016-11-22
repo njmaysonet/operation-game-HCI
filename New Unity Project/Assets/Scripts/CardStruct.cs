@@ -11,8 +11,6 @@ public class CardStruct : MonoBehaviour {
     //We don't have to use this method but I think it would work well
     //It would be for shuffling cards with the cardfaces array and then obtaining the index of its location and using that index for the next array of Docter/Specialist
 
-    public int index; //WIll be used to know what card is being used
-    
 	public int cardID;
 	public string cardName;
 	public bool isSpecialistCard; //Doctor card if false
@@ -28,7 +26,7 @@ public class CardStruct : MonoBehaviour {
 		DontDestroyOnLoad (this.gameObject);
 
         //Maru Code
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 	/*returns the amount of points the player gets
