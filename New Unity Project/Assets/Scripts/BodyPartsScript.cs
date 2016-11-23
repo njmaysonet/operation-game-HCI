@@ -40,8 +40,8 @@ public class BodyPartsScript : MonoBehaviour {
 	//Loads the Maze scene
 	public void DisplayMaze()
 	{
-		//SceneManager.LoadScene ("SomeScene");
-		Debug.Log("Move to maze scene.");
+		SceneManager.LoadScene ("Adams_Apple");
+		Debug.Log("Move to Adam's Apple Scene.");
 	}
 	
 	public void SetBodyPartActive(int id)

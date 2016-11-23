@@ -18,35 +18,35 @@ Platform assembly: E:\NJM\Documents\CAP4104\operation game\New Unity Project\Bui
 Loading E:\NJM\Documents\CAP4104\operation game\New Unity Project\Builds\SurgeryTimeBuild004_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: E:\NJM\Documents\CAP4104\operation game\New Unity Project\Builds\SurgeryTimeBuild004_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading E:\NJM\Documents\CAP4104\operation game\New Unity Project\Builds\SurgeryTimeBuild004_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.112 seconds
+- Completed reload, in  0.150 seconds
 Platform assembly: E:\NJM\Documents\CAP4104\operation game\New Unity Project\Builds\SurgeryTimeBuild004_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\NJM\Documents\CAP4104\operation game\New Unity Project\Builds\SurgeryTimeBuild004_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 9.929276 ms
+UnloadTime: 2.041853 ms
 Start button clicked.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 86.430466 ms
+UnloadTime: 2.917811 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 297.
-Total: 16.725702 ms (FindLiveObjects: 0.012287 ms CreateObjectMapping: 0.010825 ms MarkObjects: 0.148918 ms  DeleteObjects: 0.006729 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 296.
+Total: 0.179931 ms (FindLiveObjects: 0.038619 ms CreateObjectMapping: 0.010239 ms MarkObjects: 0.124927 ms  DeleteObjects: 0.005851 ms)
 
 selected index: 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.251033 ms
+UnloadTime: 1.186375 ms
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 261.
-Total: 0.173787 ms (FindLiveObjects: 0.037156 ms CreateObjectMapping: 0.007899 ms MarkObjects: 0.121124 ms  DeleteObjects: 0.007314 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.157695 ms (FindLiveObjects: 0.034815 ms CreateObjectMapping: 0.006729 ms MarkObjects: 0.108543 ms  DeleteObjects: 0.007314 ms)
 
-Name input:Delilah
+Name input:Success
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -55,26 +55,193 @@ Exit name scene
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.481279 ms
+UnloadTime: 0.517850 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 476.
-Total: 0.228498 ms (FindLiveObjects: 0.012287 ms CreateObjectMapping: 0.010825 ms MarkObjects: 0.199826 ms  DeleteObjects: 0.005266 ms)
-
-gCore exists! Good! | CardSwitcher.cs
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 475.
+Total: 0.238737 ms (FindLiveObjects: 0.010532 ms CreateObjectMapping: 0.010532 ms MarkObjects: 0.212114 ms  DeleteObjects: 0.004973 ms)
 
 gCore exists! Good! | CardSwitcher.cs
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Move to maze scene.
+gCore exists! Good! | CardSwitcher.cs
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Move to maze scene.
+Move to Adam's Apple Scene.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.429494 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.145700 ms (FindLiveObjects: 0.009947 ms CreateObjectMapping: 0.009947 ms MarkObjects: 0.105033 ms  DeleteObjects: 0.020479 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DraggingObj.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2100 -> priority: 1 
+  Thread -> id: 2194 -> priority: 1 
