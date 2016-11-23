@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ExitCheck : MonoBehaviour {
     
@@ -12,10 +13,12 @@ public class ExitCheck : MonoBehaviour {
         GetComponent<AudioSource>().clip = success;
     }
 
-    void OnCollisionEnter()
+	IEnumerator OnCollisionEnter()
     {
         GetComponent<AudioSource>().Play();
         Debug.Log("You win!");
+		yield return new WaitForSeconds (4f);
+		SceneManager.LoadScene ("WinScreen");
     }
 
     // Update is called once per frame

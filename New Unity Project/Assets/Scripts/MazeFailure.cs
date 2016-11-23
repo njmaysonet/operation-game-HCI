@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MazeFailure : MonoBehaviour {
 
@@ -24,5 +25,6 @@ public class MazeFailure : MonoBehaviour {
         Debug.Log("You lose!");
         yield return new WaitForSeconds(4f);
         Destroy(this.gameObject);
+		SceneManager.LoadScene ("GameView");
     }
 }

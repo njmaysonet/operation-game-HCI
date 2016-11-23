@@ -16,7 +16,7 @@ public class PlayerAndScoreScript : MonoBehaviour {
 		temp = (PlayerStruct)core.playerList [core.currentPlayerID];
 		currentPlayerText = temp.getPlayerName();
 		currentPlayerScore = temp.score;
-		playerAndScoreText.text = "Player" + core.currentPlayerID +"Name: " + currentPlayerText + "\n" + "Score: "
+		playerAndScoreText.text = "Player " + (core.currentPlayerID + 1) +" Name: " + currentPlayerText + "\n" + "Score: "
 			+ currentPlayerScore;
 	}
 
@@ -26,7 +26,7 @@ public class PlayerAndScoreScript : MonoBehaviour {
 			temp = (PlayerStruct)core.playerList [core.currentPlayerID];
 			currentPlayerText = temp.getPlayerName ();
 			currentPlayerScore = temp.score;
-			playerAndScoreText.text = "Player " + core.currentPlayerID + " Name: " + currentPlayerText + "\n" + "Score: "
+			playerAndScoreText.text = "Player " + (core.currentPlayerID + 1) + " Name: " + currentPlayerText + "\n" + "Score: "
 			+ currentPlayerScore;
 			playerNeedUpdate = false;
 		}

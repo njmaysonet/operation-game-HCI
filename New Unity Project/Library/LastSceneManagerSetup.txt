@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Maze Scenes/Brain_Freeze.unity
+- path: Assets/_Scenes/Final Scenes/WinScreen.unity
   isLoaded: 1
   isActive: 1

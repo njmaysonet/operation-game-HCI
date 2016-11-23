@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\PlayerStruct.cs" />
      <Compile Include="Assets\Scripts\ShuffleDecks.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
+     <Compile Include="Assets\WinSceneExit.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
