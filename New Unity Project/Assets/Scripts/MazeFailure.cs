@@ -16,10 +16,13 @@ public class MazeFailure : MonoBehaviour {
 	
 	}
 
-    void OnCollisionEnter()
+    IEnumerator OnCollisionEnter2D()
     {
-        Instantiate(bloodSplatter, transform.position, transform.rotation);
+      
+        bloodSplatter.Play();
         GetComponent<AudioSource>().Play();
         Debug.Log("You lose!");
+        yield return new WaitForSeconds(4f);
+        Destroy(this.gameObject);
     }
 }
