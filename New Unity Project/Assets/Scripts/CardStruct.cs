@@ -23,7 +23,8 @@ public class CardStruct : MonoBehaviour {
 		cardName = "";
 		isSpecialistCard = false;
 		unique = Guid.NewGuid ();
-		DontDestroyOnLoad (this.gameObject);
+		DontDestroyOnLoad (this);
+		this.tag = "card";
 
         //Maru Code
         //spriteRenderer = GetComponent<SpriteRenderer>();

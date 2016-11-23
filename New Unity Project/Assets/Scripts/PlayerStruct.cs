@@ -16,6 +16,7 @@ public class PlayerStruct : MonoBehaviour {
 		playerName = "";
 		cardList = new ArrayList ();
 		score = 0;
+		this.tag = "player";
 		DontDestroyOnLoad (this);
 	}
 

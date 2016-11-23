@@ -33,8 +33,49 @@ public class BodyPartsScript : MonoBehaviour {
 		iceCream.interactable = false;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void SetBodyPartActive(int id)
+	{
+		switch (id) 
+		{
+		case 0:
+			adamsApple.interactable = true;
+			break;
+		case 1:
+			brokenHeart.interactable = true;
+			break;
+		case 2:
+			wrenchedAnkle.interactable = true;
+			break;
+		case 3:
+			bfStomach.interactable = true;
+			break;
+		case 4:
+			spareRibs.interactable = true;
+			break;
+		case 5:
+			waterKnee.interactable = true;
+			break;
+		case 6:
+			funnyBone.interactable = true;
+			break;
+		case 7:
+			charlieHorse.interactable = true;
+			break;
+		case 8:
+			writersCramp.interactable = true;
+			break;
+		case 9:
+			wishBone.interactable = true;
+			break;
+		case 10:
+			breadBasket.interactable = true;
+			break;
+		case 11:
+			iceCream.interactable = true;
+			break;
+		default:
+			Debug.Log ("No button made active. Shouldn't happen");
+			break;
+		}
 	}
 }

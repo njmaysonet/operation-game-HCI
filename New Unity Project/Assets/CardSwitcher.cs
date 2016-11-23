@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class CardSwitcher : MonoBehaviour {
-	public Button cardButton;
+	public GameObject cardButton;
+	public GameObject bodyPartContainer;
 	public GameCore gCore;
 	public Sprite appleSprite; //1
 	public Sprite heartSprite; //2
@@ -18,11 +19,36 @@ public class CardSwitcher : MonoBehaviour {
 	public Sprite breadSprite; //11
 	public Sprite iceCreamSprite; //12
 	private CardStruct currentCard;
+	private BodyPartsScript bodyPartControl;
 
-	// Use this for initialization
+	/*In this script, we will call functions from GameCore and
+	 * from BodyPartsScript in order to switch the current
+	 * Doctor Card image to the first card in the 'draw pile'
+	 * which is stored as an ArrayList of CardStructs.
+	 * 
+	 * First we find GameCore in run time using GameObject.Find()
+	 * and then ask the core to instantiate the cards. At this point
+	 * we now have an active draw pile of cards. By getting the top
+	 * of the draw pile, we can display that card's sprite by setting
+	 * the card button's image component's sprite value to the return
+	 * value of the GetSprite switch which takes the current card's
+	 * ID as a parameter.
+	 * 
+	 * TODO Implement similar logic for switching the Specialist cards
+	 * */
 	void Start () {
 		gCore = GameObject.Find ("GameCore").GetComponent<GameCore> ();
-		currentCard = gCore.GetCurrentCard ();
+		gCore.MakeDoctorCards ();
+		bodyPartControl = bodyPartContainer.GetComponent<BodyPartsScript> ();
+
+		if (gCore != null) {
+			Debug.Log ("Entered null check if statement | CardSwitcher.cs");
+			currentCard = gCore.GetCurrentCard ();
+			cardButton.GetComponent<Image> ().sprite = GetSprite (currentCard.cardID);
+			bodyPartControl.SetBodyPartActive (currentCard.cardID);
+		} else {
+			Debug.Log ("gCore is null | CardSwitcher.cs");
+		}
 	}
 
 	//Switch Statment to correlate cardID with Sprite to be displayed
@@ -32,40 +58,30 @@ public class CardSwitcher : MonoBehaviour {
 		{
 		case 0:
 			return appleSprite;
-			break;
 		case 1:
 			return heartSprite;
-			break;
 		case 2:
 			return wrenchSprite;
-			break;
 		case 3:
 			return butterflySprite;
-			break;
 		case 4:
 			return ribSprite;
-			break;
 		case 5:
 			return waterSprite;
-			break;
 		case 6:
 			return fBoneSprite;
-			break;
 		case 7:
 			return horseSprite;
-			break;
 		case 8:
 			return pencilSprite;
-			break;
 		case 9:
 			return wBoneSprite;
-			break;
 		case 10:
 			return breadSprite;
-			break;
 		case 11:
 			return iceCreamSprite;
-			break;
+		default:
+			return appleSprite;
 		}
 	}
 }

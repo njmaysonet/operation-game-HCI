@@ -17,7 +17,7 @@ public class GameCore : MonoBehaviour {
 	public ArrayList doctorCardList;
 	public ArrayList specialistCardList;
 	private CardStruct tempCard;
-	private CardStruct prefabCard;
+	public CardStruct prefabCard;
 	private PlayerStruct tempPlayer;
 	public PlayerStruct originalPlayer;
 
@@ -33,6 +33,7 @@ public class GameCore : MonoBehaviour {
 		playerList = new ArrayList();
 		doctorCardList = new ArrayList ();
 		specialistCardList = new ArrayList ();
+		prefabCard = new CardStruct ();
 		DontDestroyOnLoad(this);
 	}
 
