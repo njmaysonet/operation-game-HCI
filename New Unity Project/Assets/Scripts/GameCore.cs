@@ -118,6 +118,26 @@ public class GameCore : MonoBehaviour {
 			tempCard = Instantiate (prefabCard);
 			tempCard.cardID = i;
 			tempCard.isSpecialistCard = true;
+			specialistCardList.Add (tempCard);
+		}
+	}
+	//Must be called after MakeSpecialistCards()
+	public void DistributeSpecialist()
+	{
+		PlayerStruct temp;
+		int count = 0;
+		if (playerCount == 1) {
+			temp = (PlayerStruct)playerList [currentPlayerID];
+			temp.cardList = specialistCardList;
+		} else {
+			for (int i = 0; i < playerCount; i++) {
+				temp = (PlayerStruct)playerList [currentPlayerID];
+				for (int j = 0; j < (12 / playerCount); j++) {
+					temp.addCard ((CardStruct)specialistCardList [count]);
+					count++;
+				}
+				playerList [currentPlayerID] = temp;
+			}
 		}
 	}
 

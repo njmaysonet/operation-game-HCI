@@ -5,7 +5,9 @@ using UnityEngine.UI;
 public class CardSwitcher : MonoBehaviour {
 	public GameObject cardButton;
 	public GameObject bodyPartContainer;
+	public GameObject specialistButton;
 	public GameCore gCore;
+	//DOCTOR SPRITES
 	public Sprite appleSprite; //1
 	public Sprite heartSprite; //2
 	public Sprite wrenchSprite; //3
@@ -18,8 +20,23 @@ public class CardSwitcher : MonoBehaviour {
 	public Sprite wBoneSprite; //10
 	public Sprite breadSprite; //11
 	public Sprite iceCreamSprite; //12
+	//SPECIALIST SPRITES
+	public Sprite appleSpecial;
+	public Sprite heartSpecial;
+	public Sprite wrenchSpecial;
+	public Sprite butterflySpecial;
+	public Sprite ribSpecial;
+	public Sprite waterSpecial;
+	public Sprite fBoneSpecial;
+	public Sprite horseSpecial;
+	public Sprite pencilSpecial;
+	public Sprite wBoneSpecial;
+	public Sprite breadSpecial;
+	public Sprite iceCreamSpecial;
+	//private variables
 	private CardStruct currentCard;
 	private BodyPartsScript bodyPartControl;
+	private ArrayList currentPlayerCards;
 	bool needNewBodyPartActive = false;
 	bool needBodyPartDisabled = false;
 
