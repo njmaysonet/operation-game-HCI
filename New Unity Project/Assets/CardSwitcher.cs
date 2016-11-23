@@ -20,6 +20,8 @@ public class CardSwitcher : MonoBehaviour {
 	public Sprite iceCreamSprite; //12
 	private CardStruct currentCard;
 	private BodyPartsScript bodyPartControl;
+	bool needNewBodyPartActive = false;
+	bool needBodyPartDisabled = false;
 
 	/*In this script, we will call functions from GameCore and
 	 * from BodyPartsScript in order to switch the current
@@ -42,12 +44,24 @@ public class CardSwitcher : MonoBehaviour {
 		bodyPartControl = bodyPartContainer.GetComponent<BodyPartsScript> ();
 
 		if (gCore != null) {
-			Debug.Log ("Entered null check if statement | CardSwitcher.cs");
+			Debug.Log ("gCore exists! Good! | CardSwitcher.cs");
 			currentCard = gCore.GetCurrentCard ();
 			cardButton.GetComponent<Image> ().sprite = GetSprite (currentCard.cardID);
 			bodyPartControl.SetBodyPartActive (currentCard.cardID);
+			needNewBodyPartActive = true;
 		} else {
 			Debug.Log ("gCore is null | CardSwitcher.cs");
+		}
+	}
+
+	void Update()
+	{
+		if (needNewBodyPartActive) {
+			bodyPartControl.SetBodyPartActive (currentCard.cardID);
+			needNewBodyPartActive = false;
+		} else if(needBodyPartDisabled){
+			//disable body part
+			//get new card
 		}
 	}
 
@@ -81,6 +95,7 @@ public class CardSwitcher : MonoBehaviour {
 		case 11:
 			return iceCreamSprite;
 		default:
+			Debug.Log ("Switch statement, default entered. Shouldn't happen. | CardSwitcher.cs");
 			return appleSprite;
 		}
 	}

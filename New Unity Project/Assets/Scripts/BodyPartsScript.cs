@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BodyPartsScript : MonoBehaviour {
 	public Button adamsApple;
@@ -31,6 +33,15 @@ public class BodyPartsScript : MonoBehaviour {
 		wishBone.interactable = false;
 		breadBasket.interactable = false;
 		iceCream.interactable = false;
+
+		adamsApple.onClick.AddListener (DisplayMaze);
+	}
+
+	//Loads the Maze scene
+	public void DisplayMaze()
+	{
+		//SceneManager.LoadScene ("SomeScene");
+		Debug.Log("Move to maze scene.");
 	}
 	
 	public void SetBodyPartActive(int id)

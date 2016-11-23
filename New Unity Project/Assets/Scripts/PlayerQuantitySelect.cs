@@ -33,9 +33,9 @@ public class PlayerQuantitySelect : MonoBehaviour
 	public void DropdownValueChangedHandler(Dropdown target)
 	{
 		Debug.Log("selected index: " + target.value);
-		playerCount = target.value + 1;
+		playerCount = target.value;
 		//call functions from GameCore to set up players
-		gc.GetComponent<GameCore>().SetPlayerCount (target.value + 1);
+		gc.GetComponent<GameCore>().SetPlayerCount (target.value);
 		gc.GetComponent<GameCore> ().CreatePlayers ();
 		SceneManager.LoadScene ("PlayerNameMenu");
 	}

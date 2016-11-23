@@ -33,7 +33,6 @@ public class GameCore : MonoBehaviour {
 		playerList = new ArrayList();
 		doctorCardList = new ArrayList ();
 		specialistCardList = new ArrayList ();
-		prefabCard = new CardStruct ();
 		DontDestroyOnLoad(this);
 	}
 
@@ -47,6 +46,24 @@ public class GameCore : MonoBehaviour {
     {
         gameTurn++;
     }
+
+	public void SetCurrentPlayer(int num)
+	{
+		if (num < playerCount) {
+			currentPlayerID = num;
+		} else {
+			Debug.Log ("PlayerID out of bounds. | SetCurrentPlayer, GameCore");
+		}
+	}
+
+	public void NextPlayer()
+	{
+		currentPlayerID++;
+		if(currentPlayerID >= 12)
+		{
+			currentPlayerID = 0;
+		}
+	}
 
 	public void SetPlayerCount(int count)
 	{
