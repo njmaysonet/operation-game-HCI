@@ -4,7 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class MazeFailure : MonoBehaviour {
 
+    //The particle system used to display a blood splatter upon a maze failure
     public ParticleSystem bloodSplatter;
+
+    //The audio clip that plays a song upon a maze failure
     public AudioClip failure;
 
     // Use this for initialization
@@ -17,12 +20,20 @@ public class MazeFailure : MonoBehaviour {
 	
 	}
 
+    //If the user hits a maze wall
     IEnumerator OnCollisionEnter2D()
     {
       
+        //Plays the failure particle system effect
         bloodSplatter.Play();
+
+        //Plays the failure sound
         GetComponent<AudioSource>().Play();
+
+        //Informs the user of a loss
         Debug.Log("You lose!");
+
+        //Waits 4 seconds before destroying the game object in order for the sound clip to play 
         yield return new WaitForSeconds(4f);
         Destroy(this.gameObject);
 		SceneManager.LoadScene ("GameView");

@@ -1,23 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class ExitCheck : MonoBehaviour {
     
+    //The audio clip used for a successful maze run
     public AudioClip success;
 
     // Use this for initialization
     void Start () {
 
+        //The audio file will not play on the start of this scene
         GetComponent<AudioSource>().playOnAwake = false;
+
+        //Acquires the audio clio
         GetComponent<AudioSource>().clip = success;
     }
 
-	void OnCollisionEnter()
+
+    //If the user enters the exit area
+    void OnCollisionEnter()
     {
-       //GetComponent<AudioSource>().Play();
+
+        //Plays the audio clip
+        GetComponent<AudioSource>().Play();
+
+        //Informs the user of their successful maze run
         Debug.Log("You win!");
-		SceneManager.LoadScene ("WinScreen");
     }
 
     // Update is called once per frame
