@@ -13,11 +13,10 @@ public class ExitCheck : MonoBehaviour {
         GetComponent<AudioSource>().clip = success;
     }
 
-	IEnumerator OnCollisionEnter()
+	void OnCollisionEnter()
     {
-        GetComponent<AudioSource>().Play();
+       //GetComponent<AudioSource>().Play();
         Debug.Log("You win!");
-		yield return new WaitForSeconds (4f);
 		SceneManager.LoadScene ("WinScreen");
     }
 
